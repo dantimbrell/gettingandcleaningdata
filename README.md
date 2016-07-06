@@ -6,9 +6,10 @@ The code "run_analysis.R" combines the test and training data collected from the
 
 The full list of parameters originally harvested by Samsung are shown below. Any parameter containing "mean" or "std" were used in my code.
 
--1 tBodyAcc-mean()-X
--2 tBodyAcc-mean()-Y
--3 tBodyAcc-mean()-Z
+1 tBodyAcc-mean()-X
+
+2 tBodyAcc-mean()-Y
+3 tBodyAcc-mean()-Z
 4 tBodyAcc-std()-X
 5 tBodyAcc-std()-Y
 6 tBodyAcc-std()-Z
