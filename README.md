@@ -5,9 +5,9 @@ Created for Coursera's "Getting and Cleaning Data" course.
 The code "run_analysis.R" combines the test and training data collected from the accelerometers from the Samsung Galaxy S smartphone. It then calculates the mean of all columns containing "mean" or "std" (standard deviation) in the name for each activity (there are six activities) for each person (there are 30 people).
 
 The full list of parameters originally harvested by Samsung are shown below along with their descriptions. Any parameter containing "mean" or "std" were used in my code.
-=================
-Feature Selection 
-=================
+
+#Feature Selection 
+
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -38,23 +38,23 @@ These signals were used to estimate variables of the feature vector for each pat
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
-mad(): Median absolute deviation 
-max(): Largest value in array
-min(): Smallest value in array
-sma(): Signal magnitude area
-energy(): Energy measure. Sum of the squares divided by the number of values. 
-iqr(): Interquartile range 
-entropy(): Signal entropy
-arCoeff(): Autorregresion coefficients with Burg order equal to 4
-correlation(): correlation coefficient between two signals
-maxInds(): index of the frequency component with largest magnitude
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
-skewness(): skewness of the frequency domain signal 
-kurtosis(): kurtosis of the frequency domain signal 
-bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
-angle(): Angle between to vectors.
+*mean(): Mean value
+*std(): Standard deviation
+*mad(): Median absolute deviation 
+*max(): Largest value in array
+*min(): Smallest value in array
+*sma(): Signal magnitude area
+*energy(): Energy measure. Sum of the squares divided by the number of values. 
+*iqr(): Interquartile range 
+*entropy(): Signal entropy
+*arCoeff(): Autorregresion coefficients with Burg order equal to 4
+*correlation(): correlation coefficient between two signals
+*maxInds(): index of the frequency component with largest magnitude
+*meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+*skewness(): skewness of the frequency domain signal 
+*kurtosis(): kurtosis of the frequency domain signal 
+*bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+*angle(): Angle between to vectors.
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
 
